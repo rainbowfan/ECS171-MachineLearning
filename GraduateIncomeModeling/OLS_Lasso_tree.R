@@ -91,10 +91,6 @@ plot(yhat.boost - data[-train,47], ylim = c(-60000, 20000), ylab = 'Deviation fr
 abline(0,0)
 boxplot(yhat.boost - data[-train, 47])
 
-
-
-
-
 #compare with unstandardized linear model
 y_mn_all = lm(data[train,47]~.,data[train,c(1:46)])
 summary(y_mn_all) 
